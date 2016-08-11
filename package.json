@@ -1,14 +1,17 @@
 {
   "name": "asobj",
-  "version": "1.0.0",
-  "description": "Object handler",
+  "version": "1.0.1",
+  "description": "Object utiltify",
   "main": "lib",
+  "browser": "shim/browser",
   "scripts": {
     "test": "./ci/test.js",
-    "prepublish": "./ci/build.js"
+    "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "a-labo/asobj",
-  "keywords": [],
+  "keywords": [
+    "object"
+  ],
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishitaka.com@gmail.com",
@@ -23,6 +26,8 @@
     "co": "^4.6.0"
   },
   "devDependencies": {
+    "ababel": "^1.0.25",
+    "ababel-es2015": "^1.0.5",
     "aglob": "^1.0.2",
     "amocha": "^1.0.13",
     "ape-doc": "^2.0.4",
