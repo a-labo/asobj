@@ -38,6 +38,8 @@
     "ape-tmpl": "^5.0.15",
     "ape-updating": "^4.0.5",
     "coz": "^6.0.17",
+    "fbjs": "^0.8.3",
+    "filecopy": "^2.0.2",
     "injectmock": "^2.0.0"
   },
   "engines": {
