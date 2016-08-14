@@ -105,7 +105,8 @@ Available functions
 | Signature | Description |
 | ---- | ----------- |
 | `.clone(src, options) -> Object` | Clone a object |
-| `.shallowEqual() -> function` | Performs equality by iterating through keys on an object and returning false |
+| `.deepEqual(obj1, obj2) -> boolean` | Compare object deeply |
+| `.shallowEqual(obj1, obj2) -> boolean` | Performs equality by iterating through keys on an object and returning false |
 
 
 <!-- Section from "doc/guides/03.Functions.md.hbs" End -->
