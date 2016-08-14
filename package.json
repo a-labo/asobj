@@ -1,6 +1,6 @@
 {
   "name": "asobj",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Object utiltify",
   "main": "lib",
   "browser": "shim/browser",
