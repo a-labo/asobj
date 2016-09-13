@@ -104,6 +104,7 @@ Available functions
 
 | Signature | Description |
 | ---- | ----------- |
+| `.assign() -> Object` | Assign object |
 | `.clone(src, options) -> Object` | Clone a object |
 | `.deepEqual(obj1, obj2) -> boolean` | Compare object deeply |
 | `.shallowEqual(obj1, obj2) -> boolean` | Performs equality by iterating through keys on an object and returning false |

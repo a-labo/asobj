@@ -31,4 +31,5 @@ node_modules
 tmp
 
 shim/browser
+shim/node
 shim/vendor
