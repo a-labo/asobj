@@ -1,6 +1,6 @@
 {
   "name": "asobj",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "Object utiltify",
   "main": "shim/node",
   "browser": "shim/browser",
@@ -27,19 +27,19 @@
     "deep-equal": "^1.0.1"
   },
   "devDependencies": {
-    "ababel": "^1.1.1",
+    "ababel": "*",
     "ababel-es2015": "^1.0.6",
     "aglob": "^1.0.2",
-    "amocha": "^1.0.14",
+    "amocha": "*",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^5.0.15",
+    "ape-tmpl": "*",
     "ape-updating": "^4.0.5",
     "coz": "^6.0.17",
-    "fbjs": "^0.8.3",
+    "fbjs": "*",
     "filecopy": "^2.0.2",
     "injectmock": "^2.0.0"
   },
