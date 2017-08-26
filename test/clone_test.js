@@ -6,28 +6,38 @@
 
 const clone = require('../lib/clone.js')
 const assert = require('assert')
-const co = require('co')
 
 describe('clone', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Clone', () => co(function * () {
-    let obj = clone({
+  it('Clone', async () => {
+    const obj = clone({
       foo: 'bar',
-      baz: 'quz'
+      baz: 'quz',
     }, {
       without: 'baz'
     })
-    assert.deepEqual(obj, { foo: 'bar' })
-  }))
+    assert.deepEqual(obj, {foo: 'bar'})
+  })
+
+  it('Clone without regx', async () => {
+    const obj = clone({
+      foo: 'bar',
+      baz: 'quz',
+      baz2: 'quz2'
+    }, {
+      without: /^ba/
+    })
+    assert.deepEqual(obj, {foo: 'bar'})
+  })
 })
 
 /* global describe, before, after, it */

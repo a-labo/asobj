@@ -6,23 +6,23 @@
 
 const shallowEqual = require('../lib/shallow_equal.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('shallow-equal', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Shallow equal', () => co(function * () {
+  it('Shallow equal', async () => {
     assert.ok(shallowEqual({ foo: 'bar' }, { foo: 'bar' }))
     assert.ok(!shallowEqual({ foo: 'bar' }, { foo: 'baz' }))
-  }))
+  })
 })
 
 /* global describe, before, after, it */

@@ -6,23 +6,23 @@
 
 const dig = require('../lib/dig.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('dig', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Dig', () => co(function * () {
+  it('Dig', async () => {
     assert.equal(dig({ foo: 'bar' }, 'foo'), 'bar')
     assert.equal(dig({ foo: { bar: 'baz' } }, 'foo', 'bar'), 'baz')
-  }))
+  })
 })
 
 /* global describe, before, after, it */

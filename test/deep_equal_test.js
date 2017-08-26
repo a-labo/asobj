@@ -6,20 +6,20 @@
 
 const deepEqual = require('../lib/deep_equal.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('deep-equal', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Deep equal', () => co(function * () {
+  it('Deep equal', async () => {
     assert.ok(
       deepEqual([ 'foo', 'bar' ], [ 'foo', 'bar' ])
     )
@@ -32,7 +32,7 @@ describe('deep-equal', function () {
     assert.ok(
       !deepEqual({ foo: 'bar' }, { foo: 'baz' })
     )
-  }))
+  })
 })
 
 /* global describe, before, after, it */

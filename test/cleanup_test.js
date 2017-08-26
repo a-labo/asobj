@@ -5,30 +5,41 @@
 'use strict'
 
 const cleanup = require('../lib/cleanup.js')
-const assert = require('assert')
-const co = require('co')
+const {equal} = require('assert')
 
 describe('cleanup', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Cleanup', () => co(function * () {
+  it('Cleanup', async () => {
     let foo
-    let values = {
+    const values = {
       foo,
       bar: 'This is bar'
     }
-    assert.equal(Object.keys(values).length, 2)
+    equal(Object.keys(values).length, 2)
     cleanup(values)
-    assert.equal(Object.keys(values).length, 1)
-  }))
+    equal(Object.keys(values).length, 1)
+  })
+
+  it('Cleanup delnull', async () => {
+    let foo
+    const values = {
+      foo,
+      bar: 'This is bar',
+      baz: null
+    }
+    equal(Object.keys(values).length, 3)
+    cleanup(values, {delNull: true})
+    equal(Object.keys(values).length, 1)
+  })
 })
 
 /* global describe, before, after, it */
