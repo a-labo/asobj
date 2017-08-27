@@ -32,9 +32,10 @@ describe('clone', function () {
     const obj = clone({
       foo: 'bar',
       baz: 'quz',
-      baz2: 'quz2'
+      baz2: 'quz2',
+      $hoge: 'this is hoge'
     }, {
-      without: /^ba/
+      without: [/^ba/, '$hoge']
     })
     assert.deepEqual(obj, {foo: 'bar'})
   })
