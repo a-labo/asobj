@@ -105,8 +105,8 @@ Available functions
 | Signature | Description |
 | ---- | ----------- |
 | `.assign() -> Object` | Assign object |
-| `.cleanup(values) -> Object` | Delete undefined properties. |
-| `.clone(src, options) -> Object` | Clone a object |
+| `.cleanup(values, options, options.delNull) -> Object` | Delete undefined properties. |
+| `.clone(src, options, options.without) -> Object` | Clone a object |
 | `.deepEqual(obj1, obj2) -> boolean` | Compare object deeply |
 | `.dig(src, keys) -> *` | Dig object props |
 | `.shallowEqual(obj1, obj2) -> boolean` | Performs equality by iterating through keys on an object and returning false |
