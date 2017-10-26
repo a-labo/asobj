@@ -30,12 +30,13 @@ describe('clone', function () {
 
   it('Clone without regx', async () => {
     const obj = clone({
+      f: 'f',
       foo: 'bar',
       baz: 'quz',
       baz2: 'quz2',
       $hoge: 'this is hoge'
     }, {
-      without: [/^ba/, '$hoge']
+      without: [/^ba/, '$hoge', 'f']
     })
     assert.deepEqual(obj, {foo: 'bar'})
   })
