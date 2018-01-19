@@ -1,6 +1,6 @@
 {
   "name": "asobj",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Object utility",
   "main": "shim/node",
   "browser": "shim/browser",
