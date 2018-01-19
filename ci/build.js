@@ -8,7 +8,7 @@
 
 process.chdir(`${__dirname}/..`)
 
-const { runTasks } = require('ape-tasking')
+const {runTasks} = require('ape-tasking')
 const filecopy = require('filecopy')
 const coz = require('coz')
 
@@ -21,6 +21,13 @@ runTasks('build', [
   () => filecopy(
     require.resolve('fbjs/lib/shallowEqual'),
     'vendor/fbjs/shallowEqual.js',
+    {
+      mkdirp: true
+    }
+  ),
+  () => filecopy(
+    require.resolve('../lib/index.mjs'),
+    'shim/browser/index.mjs',
     {
       mkdirp: true
     }

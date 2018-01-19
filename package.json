@@ -1,8 +1,8 @@
 {
   "name": "asobj",
-  "version": "2.0.6",
+  "version": "2.0.9",
   "description": "Object utility",
-  "main": "shim/node",
+  "main": "lib",
   "browser": "shim/browser",
   "scripts": {
     "test": "node ./ci/test.js",
@@ -26,8 +26,7 @@
     "deep-equal": "^1.0.1"
   },
   "devDependencies": {
-    "ababel": "^3.0.2",
-    "ababel-es2015": "^2.0.2",
+    "ababel": "^4.0.1",
     "aglob": "^3.0.0",
     "amocha": "^4.0.0",
     "ape-doc": "^2.0.4",
