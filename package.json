@@ -1,7 +1,7 @@
 {
   "name": "asobj",
-  "version": "2.0.4",
-  "description": "Object utiltify",
+  "version": "2.0.5",
+  "description": "Object utility",
   "main": "shim/node",
   "browser": "shim/browser",
   "scripts": {
@@ -35,7 +35,7 @@
     "ape-releasing": "^4.0.4",
     "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^6.0.6",
+    "ape-tmpl": "^6.0.8",
     "ape-updating": "^4.0.5",
     "coz": "^6.0.17",
     "fbjs": "^0.8.16",
