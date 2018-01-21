@@ -17,10 +17,6 @@ runTasks('shim', [
     out: 'shim/browser'
   }),
   () => ababel('**/*.js', {
-    cwd: 'lib',
-    out: 'shim/node'
-  }),
-  () => ababel('**/*.js', {
     cwd: 'vendor',
     out: 'shim/vendor'
   })
