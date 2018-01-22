@@ -1,6 +1,6 @@
 {
   "name": "asobj",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "Object utility",
   "main": "lib",
   "browser": "shim/browser",

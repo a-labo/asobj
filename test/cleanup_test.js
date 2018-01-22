@@ -29,7 +29,7 @@ describe('cleanup', function () {
     equal(Object.keys(values).length, 1)
   })
 
-  it('Cleanup delnull', async () => {
+  it('Cleanup null', async () => {
     let foo
     const values = {
       foo,
@@ -38,6 +38,18 @@ describe('cleanup', function () {
     }
     equal(Object.keys(values).length, 3)
     cleanup(values, {delNull: true})
+    equal(Object.keys(values).length, 1)
+  })
+
+  it('Cleanup empty string', async () => {
+    let foo
+    const values = {
+      foo,
+      bar: 'This is bar',
+      baz: ''
+    }
+    equal(Object.keys(values).length, 3)
+    cleanup(values, {delEmptyString: true})
     equal(Object.keys(values).length, 1)
   })
 })
