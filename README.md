@@ -109,6 +109,7 @@ Available functions
 | `.clone(src, options, options.without) -> Object` | Clone a object |
 | `.deepEqual(obj1, obj2) -> boolean` | Compare object deeply |
 | `.dig(src, keys) -> *` | Dig object props |
+| `.keyFor(, ) -> string` | Get key for value |
 | `.retrieve(obj, name) -> *` | Retrieve attribute value from object |
 | `.shallowEqual(obj1, obj2) -> boolean` | Performs equality by iterating through keys on an object and returning false |
 
