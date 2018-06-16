@@ -25,11 +25,4 @@ runTasks('build', [
       mkdirp: true
     }
   ),
-  () => filecopy(
-    require.resolve('../lib/index.mjs'),
-    'shim/browser/index.mjs',
-    {
-      mkdirp: true
-    }
-  )
 ], true)

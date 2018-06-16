@@ -8,7 +8,6 @@ const {indexJsBud} = require('ape-tmpl')
 const {description, name} = require('../package.json')
 
 module.exports = [
-  true,
   false
 ].map((mjs) => ({
   ...indexJsBud({
