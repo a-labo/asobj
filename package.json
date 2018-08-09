@@ -1,6 +1,6 @@
 {
   "name": "asobj",
-  "version": "2.1.5",
+  "version": "3.0.1",
   "description": "Object utility",
   "main": "lib",
   "browser": "shim/browser",
@@ -26,13 +26,12 @@
     "deep-equal": "^1.0.1"
   },
   "devDependencies": {
-    "ababel": "^4.0.9",
+    "ababel": "^5.0.0",
     "aglob": "^3.0.1",
     "amocha": "^5.0.0",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
-    "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.8",
     "ape-tmpl": "^6.0.10",
     "ape-updating": "^5.0.1",
@@ -42,7 +41,7 @@
     "injectmock": "^2.0.0"
   },
   "engines": {
-    "node": ">=7.6",
-    "npm": ">=4"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }
